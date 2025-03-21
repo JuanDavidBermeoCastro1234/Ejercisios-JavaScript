@@ -1,12 +1,19 @@
-let numeros =[10,20]
 
 const rango = (a,b) =>{
     a=10
-    b=10
+    b=20
     return [a,b]
 }
-for (let i = a; b < array.length; i++) {
-    const element = array[rango];
+
+const [a,b] = rango();
+let primos = []
+
+for (let i = a; i<b; i++) {
+    if (i%2!=0 && i%3!=0){
+        primos.push(i); // esto es lo que le envia los datos al array vacio que lo va a al macenar 
+        console.log(`su numero ${i} es primo`) // esto muetra los datos uno por uno almacenados
+        // console.log(`estos son ${primos}`)// esto muestra los numeros acumulados en el array despues de cada vuelta que hace el for 
+    }
+    
 };
-console.log(rango)
-console.log("7")
+console.log(`estos son ${primos}`) // esto muestra todos los datos almacenados despues de que el for cumple todos sus ciclos 

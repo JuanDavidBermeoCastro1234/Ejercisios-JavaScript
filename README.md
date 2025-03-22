@@ -24,7 +24,7 @@ Crea una función que reciba dos números **a** y **b** y retorne un array (
 
 ```jsx
 console.log(primosEnRango(10, 20)); // [11, 13, 17, 19]
-```
+```v 
 
 ---
 
